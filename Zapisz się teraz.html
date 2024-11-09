@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vievport" content="width=device-width, initial-scale=1.0">
+    <title>Zapisz się NC LanguageCourses</title>
+    <link rel="icon" href="images/Zrzut%20ekranu%202024-11-07%20012948.png">
+    <link rel="shortcut icon" href="images/Zrzut%20ekranu%202024-11-07%20012948.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: #d72000;
+            padding: 29px;
+            text-align: center;
+
+        }
+        nav a{
+            color: #000000;
+            padding: 48px;
+            text-decoration: none;
+            font-weight: lighter;
+            font-size:30px ;
+        }
+        nav a:hover {
+            background-color: #ff806a;
+            padding: 24px 48px;
+            border-radius: 12px;
+            transition: background-color 0.3s;
+
+        }
+        nav a:active{
+            background-color: #ff806a;
+            padding: 24px 48px;
+            border-radius: 17px;
+            transition: background-color 0.3s;
+        }
+        footer{
+            padding: 17px;
+            background-color: #ff3c79;
+            text-align: center;
+            font-size: 22px;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 48px;
+            font-family: Kanit,sans-serif;
+            color: #ff3c00;
+            padding: 36px;
+            background-color: #ffffff;
+            font-size: 30px;
+        }
+        .header2{
+            display: flex;
+            justify-content: center;
+            font-family: Itim,sans-serif;
+            color: #ff7300;
+            font-size: 25px;
+        }
+        .pharagraph{
+            text-align: center;
+            font-size: 24px;
+            color: black;
+            font-family: Kanit,sans-serif;
+        }
+        .desc{
+            text-align: center;
+            font-size: 24px;
+            margin: 72px;
+            color: #ff8cb0;
+            font-family: Kanit,sans-serif;
+            background-color: #ffffff;
+        }
+        form {
+            max-height: 624px;
+            max-width: 500px;
+            margin-left: 72px;
+            padding: 12px;
+            border: 2px solid #30a8b7;
+            border-radius: 12px;
+            font-size: 22px;
+            margin-bottom: 30px;
+            }
+
+        label {
+            font-family: Itim,sans-serif;
+            margin-top: 12px;
+            display: block;
+        }
+
+        input{
+            height: 7px;
+            width: 180px;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #797979;
+            border-radius: 5px;
+            font-size: 9px;
+
+        }
+        .input0{
+            height: 17px;
+            width: 432px;
+            padding: 19px;
+            margin-top: 12px;
+            border: 2px solid #2a4183;
+            border-radius: 12px;
+            font-size: 22px;
+        }
+
+        .input1{
+            height: 17px;
+            width: 432px;
+            padding: 19px;
+            margin-top: 12px;
+            border: 2px solid #ff4400;
+            border-radius: 12px;
+            font-size: 22px;
+        }
+        .input2{
+            height: 17px;
+            width: 432px;
+            padding: 19px;
+            margin-top: 12px;
+            border: 2px solid #ffcc18;
+            border-radius: 12px;
+            font-size: 22px;
+        }
+        textarea{
+            width: 552px;
+            padding: 7px;
+            margin-top: 12px;
+        }
+        button {width: 360px;
+            height: 60px;
+            margin-left: 58px;
+            text-align: center;
+            align-items: center;
+            padding: 19px;
+            margin-top: 12px;
+            background-color: #7db67d;
+            border: 1px;
+            border-radius: 14px;
+            font-family: Itim,sans-serif;
+            font-size: 22px;
+
+        }
+
+        button:hover{
+            background-color: #3a8562;
+            transition: background-color 0.1s;
+
+        }
+        select{
+            width: 480px;
+            height: 48px;
+            font-size: 22px;
+            border: 2px solid #30a8b7;
+            background-color: white;
+            border-radius: 12px;
+            font-size: 22px;
+        }
+        footer{
+            background-color: #d72000;
+        }
+        .success { color: #00d200;
+            font-family: "Bona Nova SC",sans-serif;
+            font-size: 22px;
+            justify-content: center;
+            padding: 14px;
+            margin-right: 480px;
+            margin-left: 552px;
+            margin-bottom: 24px;
+            border-collapse: collapse;
+            border: 1px solid mediumseagreen;
+            border-radius: 14px;
+            text-align: center;
+        }
+        .error {color: #7e0000;
+            font-family: "Bona Nova SC",sans-serif;
+            font-size: 22px;
+            justify-content: center;
+            margin-right: 480px;
+            margin-left: 552px;
+            padding: 14px;
+            margin-bottom: 24px;
+            border-collapse: collapse;
+            border: 1px solid #7e0000;
+            border-radius: 14px;
+            text-align: center;
+        }
+
+        .contactWrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+            margin-top: 48px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrapper">
+    <nav>
+        <a class="menu active" href="index.html">Home</a>
+        <a class="menu active" href="Zapisz%20się%20teraz.html">Zapisz się</a>
+        <a class="menu active" href="Cennik.html">Cennik</a>
+        <a class="menu active" href="Kontakt.html">Kontakt</a>
+        <a class="menu active" href="Galeria.html">Galeria</a>
+    </nav>
+    <header class="header">
+        Zapisz się wypełniając poniższy formularz
+    </header>
+    <h3 class="header2">Wypełnij formularz i zacznij naukę już dziś!</h3>
+    <div class="contactWrapper">
+        <form id="contactForm">
+            <label for="name">Imię</label>
+            <input class="input0" type="text" id="name" name="name" required>
+
+            <label for="lastname">Nazwisko</label>
+            <input class="input1" type="text" id="lastname" name="lastname" required>
+
+            <label for="email">Adres email</label>
+            <input class="input2" type="email" id="email" name="email" required>
+
+            <label for="course">Rodzaj kursu</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected hidden>Wybierz kurs</option>
+                <option value="anga1">j.angielski A1</option>
+                <option value="anga2">j.angielski A2</option>
+                <option value="angb1">j.angielski B1</option>
+                <option value="angb2">j.angielski B2</option>
+                <option value="angc1">j.angielski C1</option>
+                <option value="angc2">j.angielski C2</option>
+                <option value="spa1">j.hiszpański A1</option>
+                <option value="spa2">j.hiszpański A2</option>
+                <option value="spb1">j.hiszpański B1</option>
+                <option value="spb2">j.hiszpański B2</option>
+                <option value="spc1">j.hiszpański C1</option>
+                <option value="spc2">j.hiszpański C2</option>
+                <option value="deua1">j.niemiecki A1</option>
+                <option value="deua2">j.niemiecki A2</option>
+                <option value="deub1">j.niemiecki B1</option>
+                <option value="deub2">j.niemiecki B2</option>
+                <option value="deuc1">j.niemiecki C1</option>
+                <option value="deuc2">j.niemiecki C2</option>
+                <option value="rua1">j.rosyjski A1</option>
+                <option value="rua2">j.rosyjski A2</option>
+                <option value="rub1">j.rosyjski B1</option>
+                <option value="rub2">j.rosyjski B2</option>
+                <option value="ruc1">j.rosyjski C1</option>
+                <option value="ruc2">j.rosyjski C2</option>
+                <option value="fra1">j.francuski A1</option>
+                <option value="fra2">j.francuski A2</option>
+                <option value="frb1">j.francuski B1</option>
+                <option value="frb2">j.francuski B2</option>
+                <option value="frc1">j.francuski C1</option>
+                <option value="frc2">j.francuski C2</option>
+                <option value="ita1">j.włoski A1</option>
+                <option value="ita2">j.włoski A2</option>
+                <option value="itb1">j.włoski B1</option>
+                <option value="itb2">j.włoski B2</option>
+                <option value="itc1">j.włoski C1</option>
+                <option value="itc2">j.włoski C2</option>
+                <option value="cha1">j.chiński A1</option>
+                <option value="cha2">j.chiński A2</option>
+                <option value="chb1">j.chiński B1</option>
+                <option value="chb2">j.chiński B2</option>
+                <option value="japa1">j.japoński A1</option>
+                <option value="japa2">j.japoński A2</option>
+                <option value="japb1">j.japoński B1</option>
+                <option value="japb2">j.japoński B2</option>
+                <option value="gra1">j.grecki A1</option>
+                <option value="gra2">j.grecki A2</option>
+                <option value="grb1">j.grecki B1</option>
+                <option value="grb2">j.grecki B2</option>
+            </select>
+
+            <button type="submit">Wyślij</button>
+        </form>
+        <img src="images/Nauka-jezykow-obcych-grafika.webp" width="600">
+    </div>
+    <div id="formResponse" class="success" style="display: none;"></div>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const lastname = document.getElementById("lastname").value;
+            const email = document.getElementById("email").value;
+            const course = document.getElementById("course").value;
+            const formResponse = document.getElementById("formResponse");
+
+            if (name === "" || lastname === "" || email === "" || course === "") {
+                formResponse.textContent = "Wszystkie pola są wymagane!";
+                formResponse.className = "error";
+                formResponse.style.display = "block";
+            }
+            else{
+
+                formResponse.textContent = "Twoje zgłoszenie zostało pomyślnie wysłane.";
+                formResponse.className = "success";
+                formResponse.style.display = "block";
+
+                document.getElementById("contactForm").reset();
+            }
+        });
+    </script>
+    <footer>
+        Natalia Czajak
+    </footer>
+</div>
+</body>
+</html>
